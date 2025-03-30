@@ -1,0 +1,2 @@
+NETLIFY_SITE_ID = '740f6c91-e09f-4482-b4c7-d1867f305c31'  
+NETLIFY_AUTH_TOKEN = credentials('nfp_mZ52JbcQhcqi7sY7ednftgrxtavJXn3r6328')
