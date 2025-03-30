@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        NETLIFY_SITE_ID = 'c1fb8df4-6585-41ed-85ff-5805a589d5da'  // Replace with your Netlify Site ID
+        NETLIFY_SITE_ID = '740f6c91-e09f-4482-b4c7-d1867f305c31'  // Replace with your Netlify Site ID
         NETLIFY_AUTH_TOKEN = credentials('netlify-token')  // Replace with your Jenkins credentials ID
     }
 
