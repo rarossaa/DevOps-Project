@@ -3,78 +3,141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My DevOps Project</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>DevOps Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Pacifico&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a2c5d5a56e.js" crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #f0f4f8;
-      color: #333;
+      font-family: 'Kanit', sans-serif;
+      background: #fffafc;
+      color: #444;
     }
 
     header {
-      background: #683d02f4;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
+      background-color: #a0e7e5;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #88dbd9;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-family: 'Pacifico', cursive;
+      font-size: 2rem;
+      color: #333;
     }
 
-    .content {
-      max-width: 800px;
-      margin: 3rem auto;
-      padding: 1rem;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    }
-
-    .content h2 {
-      color: #683d02f4;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background: #683d02f4;
-      color: white;
+    nav a {
+      color: #444;
+      margin-left: 20px;
       text-decoration: none;
-      border-radius: 8px;
-      margin-top: 1rem;
-      transition: 0.3s;
+      font-weight: bold;
     }
 
-    .btn:hover {
-      background: #683d02f4;
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+      background: linear-gradient(to right, #ffb5e8, #fdfd96);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 3px dashed #fdfd96;
+      padding: 2rem;
+      border-radius: 15px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(255, 209, 220, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card i {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #ffa5ba;
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
     }
 
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      color: #888;
+      padding: 1rem;
+      background: #ffb5e8;
+      color: #444;
+      font-size: 0.9rem;
+      border-top: 2px dotted #fcbad3;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>My DevOps Project</h1>
-    <p>254488 DevOps Engineering</p>
+    <h1>DevOps 🌟</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Dashboard</a>
+      <a href="#">Deploy</a>
+      <a href="#">About</a>
+    </nav>
   </header>
 
-  <div class="content">
-    <h2>Welcome To</h2>
-    <p>The project Final DevOps!</p>
-    <a class="btn" href="https://github.com/phannnnn09/DevOps_project" target="_blank">View on GitHub</a>
-  </div>
+  <section class="hero">
+    <h2>Welcome to the DevOps Dashboard</h2>
+    <p>ระบบ CI/CD ที่น่ารัก สดใส และใช้งานง่าย 💡💖</p>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <i class="fas fa-code-branch"></i>
+      <h3>Git Integration</h3>
+      <p>ผสาน Git อย่างง่ายดาย เห็นทุก commit ชัดเจน</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-rocket"></i>
+      <h3>CI/CD Pipelines</h3>
+      <p>ปล่อยระบบอัตโนมัติได้เร็วทันใจ 🚀</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-chart-pie"></i>
+      <h3>Monitoring</h3>
+      <p>ติดตามสถานะระบบแบบเรียลไทม์</p>
+    </div>
+  </section>
 
   <footer>
-    © 2025 Rossakorn Seetaeng
-  </footer>
+    © 2025 DevOps Project — Rossakorn Seetaeng
+
 </body>
 </html>
